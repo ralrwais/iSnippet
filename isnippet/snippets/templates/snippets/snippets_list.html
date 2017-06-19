@@ -1,0 +1,29 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Snippets</title>
+</head>
+
+
+<body>
+
+
+    <h1>This is where the snippets will go</h1>
+    {% for snippets in snippets_list %}
+			<p>{{ snippet }}</p>
+	{% endfor %}
+	<hr />
+	<h2>All Snippets here:</h2>
+	{% for forms in snippets_forms %}
+			<h3>Form for: {{ forms.instance.title }}</h3>
+			{{ forms.as_p }}
+			<hr />
+	{% endfor %}
+
+
+
+
+
+
+</body>
+</html>
